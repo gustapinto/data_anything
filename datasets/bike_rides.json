@@ -1,42 +1,62 @@
 {
     "13-03-2020": {
         "mileage": 11.14,
-        "time": 42.19
+        "time": 42.19,
+        "average_speed": 15.8,
+        "top_speed": 29.5
     },
     "25-04-2020": {
         "mileage": 8.84,
-        "time": 26.16
+        "time": 26.16,
+        "average_speed": 20.2,
+        "top_speed": 29.2
     },
     "09-05-2020": {
         "mileage": 7.69,
-        "time": 24.57
+        "time": 24.57,
+        "average_speed": 18.5,
+        "top_speed": 29.5
     },
     "20-06-2020": {
         "mileage": 10.46,
-        "time": 32.14
+        "time": 32.14,
+        "average_speed": 19.5,
+        "top_speed": 32.4
     },
     "21-06-2020": {
         "mileage": 8.78,
-        "time": 35.12
+        "time": 35.12,
+        "average_speed": 15.0,
+        "top_speed": 30.6
     },
     "04-07-2020": {
         "mileage": 11.10,
-        "time": 34.09
+        "time": 34.09,
+        "average_speed": 19.5,
+        "top_speed": 30.6
     },
     "05-07-2020": {
         "mileage": 8.78,
-        "time": 31.38
+        "time": 31.38,
+        "average_speed": 16.7,
+        "top_speed": 31.7
     },
     "18-07-2020": {
         "mileage": 5.08,
-        "time": 20.08
+        "time": 20.08,
+        "average_speed": 15.1,
+        "top_speed": 33.1
     },
     "27-08-2020": {
         "mileage": 14.89,
-        "time": 53.48
+        "time": 53.48,
+        "average_speed": 16.6,
+        "top_speed": 40.7
     },
     "30-08-2020": {
         "mileage": 8.85,
-        "time": 29.28
+        "time": 29.28,
+        "average_speed": 18.0,
+        "top_speed": 36.4
     }
 }
