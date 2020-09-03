@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-dataframe = pd.read_json('strava/datasets/bike_rides.json')
+dataframe = pd.read_json('./datasets/bike_rides.json')
 
 def get_line_average(field):
     return f'{dataframe.loc[field].mean(axis=0):0.02f}'
