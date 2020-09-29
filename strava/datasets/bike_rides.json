@@ -59,10 +59,28 @@
         "average_speed": 18.0,
         "top_speed": 36.4
     },
-    "06-09-2020": {
+    "05-09-2020": {
         "mileage": 19.88,
         "time": 51.28,
         "average_speed": 23.2,
         "top_speed": 40.7
+    },
+    "12-09-2020": {
+        "mileage": 12.32,
+        "time": 36.13,
+        "average_speed": 20.4,
+        "top_speed": 38.2
+    },
+    "19-09-2020": {
+        "mileage": 13.18,
+        "time": 36.5,
+        "average_speed": 21.5,
+        "top_speed": 42.5
+    },
+    "26-09-2020": {
+        "mileage": 23.01,
+        "time": 66.59,
+        "average_speed": 20.6,
+        "top_speed": 37.8
     }
 }

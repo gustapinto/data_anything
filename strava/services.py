@@ -27,10 +27,10 @@ def _parse_data_frame_for_plot(field):
 
 def print_average_data():
     print(f'''
-Quilometragem média: {_get_line_average('mileage'):0.02f} Km
-Tempo médio por pedalada: {_get_line_average('time'):0.02f} m:s
-Velocidade normal média: {_get_line_average('average_speed'):0.02f} Km/h
-Velocidadade máxima média: {_get_line_average('top_speed'):0.02f} Km/h
+Quilometragem média       | {_get_line_average('mileage'):0.02f} Km
+Tempo médio por pedalada  | {_get_line_average('time'):0.02f} m:s
+Velocidade normal média   | {_get_line_average('average_speed'):0.02f} Km/h
+Velocidadade máxima média | {_get_line_average('top_speed'):0.02f} Km/h
     ''')
 
 def plot_chart(field, kind):
