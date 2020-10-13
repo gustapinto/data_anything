@@ -3,9 +3,11 @@ import pandas as pd
 
 data_frame = pd.read_json(path_or_buf='./datasets/bike_rides.json')
 
-labels = {
-    'mileage': 'Quilometragem',
-    'time': 'Tempo por pedalada',
+data_frame_labels = {
+    'mileage': ['Quilometragem', 'Km'],
+    'time': ['Tempo por pedalada', 'm:s'],
+    'average_speed': ['Velocidade média', 'Km/h'],
+    'top_speed': ['Velocidade máxima', 'Km/h'],
 }
 
 def _get_line_average(field):
@@ -13,35 +15,34 @@ def _get_line_average(field):
 
 def _parse_data_frame_for_plot(field):
     field_avg = []
+    field_label = data_frame_labels[field][0]
 
     for key in data_frame.columns:
         field_avg.append(_get_line_average(field))
 
     plot_data_frame = pd.DataFrame({
         'Datas': data_frame.columns,
-        labels[field]: data_frame.loc[field].values,
-        'Media': field_avg,
+        'Média': field_avg,
+        field_label: data_frame.loc[field].values,
     })
 
     return plot_data_frame
 
 def print_average_data():
-    print(f'''
-Quilometragem média       | {_get_line_average('mileage'):0.02f} Km
-Tempo médio por pedalada  | {_get_line_average('time'):0.02f} m:s
-Velocidade normal média   | {_get_line_average('average_speed'):0.02f} Km/h
-Velocidadade máxima média | {_get_line_average('top_speed'):0.02f} Km/h
-    ''')
+    for element, labels in data_frame_labels.items():
+        label = labels[0]
+        metric_unit = labels[1]
+
+        print(f'{label}: {_get_line_average(element):0.02f} {metric_unit}')
 
 def plot_chart(field, kind):
     plot_data = _parse_data_frame_for_plot(field)
+    plot_index = True if kind != 'bar' else False
 
-    if kind == 'bar':
-        sub_plot = plot_data.plot(x='Datas', y='Media', color='#ed8121',
-                                  use_index=False)
-    elif kind == 'line':
-        sub_plot = plot_data.plot(x='Datas', y='Media', color='#ed8121',
-                                  use_index=True)
+    field_label = data_frame_labels[field][0]
 
-    return plot_data.plot(x='Datas', y=labels[field], ax=sub_plot,
-                          kind=kind, title=labels[field])
+    sub_plot = plot_data.plot(x='Datas', y='Média', color='#ed8121',
+                              use_index=plot_index)
+
+    return plot_data.plot(x='Datas', y=field_label, ax=sub_plot,
+                          kind=kind, title=field_label)
