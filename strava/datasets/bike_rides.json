@@ -82,5 +82,11 @@
         "time": 66.59,
         "average_speed": 20.6,
         "top_speed": 37.8
+    },
+    "12-10-2020": {
+        "mileage": 23.04,
+        "time": 63.21,
+        "average_speed": 21.8,
+        "top_speed": 39.2
     }
 }
