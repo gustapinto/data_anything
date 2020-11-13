@@ -1,222 +1,446 @@
-"2010": {
-    "january": {
-        "min": 21,
-        "max": 29,
-        "min-range": "20-22",
-        "max-range": "28-30"
+{
+    "2010": {
+        "january": {
+            "min": 21,
+            "max": 29,
+            "min-range": "20-22",
+            "max-range": "28-30"
+        },
+        "february": {
+            "min": 21,
+            "max": 31,
+            "min-range": "20-22",
+            "max-range": "30-32"
+        },
+        "march": {
+            "min": 19,
+            "max": 29,
+            "min-range": "18-20",
+            "max-range": "28-30"
+        },
+        "april": {
+            "min": 17,
+            "max": 27,
+            "min-range": "16-18",
+            "max-range": "26-28"
+        },
+        "may": {
+            "min": 15,
+            "max": 25,
+            "min-range": "14-16",
+            "max-range": "24-26"
+        },
+        "june": {
+            "min": 11,
+            "max": 25,
+            "min-range": "10-12",
+            "max-range": "24-26"
+        },
+        "july": {
+            "min": 15,
+            "max": 27,
+            "min-range": "14-16",
+            "max-range": "26-28"
+        },
+        "august": {
+            "min": 13,
+            "max": 29,
+            "min-range": "12-14",
+            "max-range": "28-30"
+        },
+        "september": {
+            "min": 15,
+            "max": 29,
+            "min-range": "14-16",
+            "max-range": "28-30"
+        },
+        "october": {
+            "min": 15,
+            "max": 27,
+            "min-range": "14-16",
+            "max-range": "26-28"
+        },
+        "november": {
+            "min": 17,
+            "max": 27,
+            "min-range": "16-18",
+            "max-range": "26-28"
+        },
+        "december": {
+            "min": 19,
+            "max": 31,
+            "min-range": "18-20",
+            "max-range": "30-32"
+        }
     },
-    "february": {
-        "min": 21,
-        "max": 31,
-        "min-range": "20-22",
-        "max-range": "30-32"
+    "2011": {
+        "january": {
+            "min": 21,
+            "max": 31,
+            "min-range": "20-22",
+            "max-range": "30-32"
+        },
+        "february": {
+            "min": 19,
+            "max": 31,
+            "min-range": "18-20",
+            "max-range": "30-32"
+        },
+        "march": {
+            "min": 19,
+            "max": 27,
+            "min-range": "18-20",
+            "max-range": "26-28"
+        },
+        "april": {
+            "min": 17,
+            "max": 27,
+            "min-range": "16-18",
+            "max-range": "26-28"
+        },
+        "may": {
+            "min": 13,
+            "max": 25,
+            "min-range": "12-14",
+            "max-range": "24-26"
+        },
+        "june": {
+            "min": 9,
+            "max": 25,
+            "min-range": "08-10",
+            "max-range": "24-26"
+        },
+        "july": {
+            "min": 15,
+            "max": 27,
+            "min-range": "14-16",
+            "max-range": "26-28"
+        },
+        "august": {
+            "min": 15,
+            "max": 29,
+            "min-range": "14-16",
+            "max-range": "28-30"
+        },
+        "september": {
+            "min": 13,
+            "max": 31,
+            "min-range": "12-14",
+            "max-range": "30-32"
+        },
+        "october": {
+            "min": 17,
+            "max": 29,
+            "min-range": "16-18",
+            "max-range": "28-30"
+        },
+        "november": {
+            "min": 17,
+            "max": 29,
+            "min-range": "16-18",
+            "max-range": "28-30"
+        },
+        "december": {
+            "min": 17,
+            "max": 29,
+            "min-range": "16-18",
+            "max-range": "28-30"
+        }
     },
-    "march": {
-        "min": 19,
-        "max": 29,
-        "min-range": "18-20",
-        "max-range": "28-30"
+    "2012": {
+        "january": {
+            "min": 17,
+            "max": 27,
+            "min-range": "16-18",
+            "max-range": "26-28"
+        },
+        "february": {
+            "min": 19,
+            "max": 31,
+            "min-range": "18-20",
+            "max-range": "30-32"
+        },
+        "march": {
+            "min": 17,
+            "max": 29,
+            "min-range": "16-18",
+            "max-range": "28-30"
+        },
+        "april": {
+            "min": 17,
+            "max": 27,
+            "min-range": "16-18",
+            "max-range": "26-28"
+        },
+        "may": {
+            "min": 15,
+            "max": 25,
+            "min-range": "14-16",
+            "max-range": "24-26"
+        },
+        "june": {
+            "min": 15,
+            "max": 25,
+            "min-range": "14-16",
+            "max-range": "24-26"
+        },
+        "july": {
+            "min": 13,
+            "max": 25,
+            "min-range": "12-14",
+            "max-range": "24-26"
+        },
+        "august": {
+            "min": 11,
+            "max": 27,
+            "min-range": "10-12",
+            "max-range": "26-28"
+        },
+        "september": {
+            "min": 17,
+            "max": 29,
+            "min-range": "16-18",
+            "max-range": "28-30"
+        },
+        "october": {
+            "min": 19,
+            "max": 31,
+            "min-range": "18-20",
+            "max-range": "30-32"
+        },
+        "november": {
+            "min": 17,
+            "max": 29,
+            "min-range": "16-18",
+            "max-range": "28-30"
+        },
+        "december": {
+            "min": 21,
+            "max": 31,
+            "min-range": "20-22",
+            "max-range": "30-32"
+        }
     },
-    "april": {
-        "min": 17,
-        "max": 27,
-        "min-range": "16-18",
-        "max-range": "26-28"
+    "2013": {
+        "january": {
+            "min": 19,
+            "max": 29,
+            "min-range": "18-20",
+            "max-range": "28-30"
+        },
+        "february": {
+            "min": 19,
+            "max": 31,
+            "min-range": "18-20",
+            "max-range": "30-32"
+        },
+        "march": {
+            "min": 19,
+            "max": 29,
+            "min-range": "18-20",
+            "max-range": "28-30"
+        },
+        "april": {
+            "min": 15,
+            "max": 27,
+            "min-range": "14-16",
+            "max-range": "26-28"
+        },
+        "may": {
+            "min": 13,
+            "max": 25,
+            "min-range": "12-14",
+            "max-range": "24-26"
+        },
+        "june": {
+            "min": 13,
+            "max": 25,
+            "min-range": "12-14",
+            "max-range": "24-26"
+        },
+        "july": {
+            "min": 11,
+            "max": 25,
+            "min-range": "10-12",
+            "max-range": "24-26"
+        },
+        "august": {
+            "min": 11,
+            "max": 27,
+            "min-range": "10-12",
+            "max-range": "26-28"
+        },
+        "september": {
+            "min": 15,
+            "max": 29,
+            "min-range": "14-16",
+            "max-range": "28-30"
+        },
+        "october": {
+            "min": 19,
+            "max": 29,
+            "min-range": "18-20",
+            "max-range": "28-30"
+        },
+        "november": {
+            "min": 19,
+            "max": 29,
+            "min-range": "18-20",
+            "max-range": "28-30"
+        },
+        "december": {
+            "min": 19,
+            "max": 31,
+            "min-range": "18-20",
+            "max-range": "30-32"
+        }
     },
-    "may": {
-        "min": 15,
-        "max": 25,
-        "min-range": "14-16",
-        "max-range": "24-26"
+    "2014": {
+        "january": {
+            "min": 19,
+            "max": 33,
+            "min-range": "18-20",
+            "max-range": "32-34"
+        },
+        "february": {
+            "min": 21,
+            "max": 33,
+            "min-range": "20-22",
+            "max-range": "32-34"
+        },
+        "march": {
+            "min": 19,
+            "max": 29,
+            "min-range": "18-20",
+            "max-range": "28-30"
+        },
+        "april": {
+            "min": 17,
+            "max": 29,
+            "min-range": "16-18",
+            "max-range": "28-30"
+        },
+        "may": {
+            "min": 13,
+            "max": 27,
+            "min-range": "12-14",
+            "max-range": "26-28"
+        },
+        "june": {
+            "min": 13,
+            "max": 27,
+            "min-range": "12-14",
+            "max-range": "26-28"
+        },
+        "july": {
+            "min": 13,
+            "max": 25,
+            "min-range": "12-14",
+            "max-range": "24-26"
+        },
+        "august": {
+            "min": 13,
+            "max": 29,
+            "min-range": "12-14",
+            "max-range": "28-30"
+        },
+        "september": {
+            "min": 15,
+            "max": 29,
+            "min-range": "14-16",
+            "max-range": "28-30"
+        },
+        "october": {
+            "min": 15,
+            "max": 31,
+            "min-range": "14-16",
+            "max-range": "30-32"
+        },
+        "november": {
+            "min": 19,
+            "max": 29,
+            "min-range": "18-20",
+            "max-range": "28-30"
+        },
+        "december": {
+            "min": 19,
+            "max": 29,
+            "min-range": "18-20",
+            "max-range": "28-30"
+        }
     },
-    "june": {
-        "min": 11,
-        "max": 25,
-        "min-range": "10-12",
-        "max-range": "24-26"
-    },
-    "july": {
-        "min": 15,
-        "max": 27,
-        "min-range": "14-16",
-        "max-range": "26-28"
-    },
-    "august": {
-        "min": 13,
-        "max": 29,
-        "min-range": "12-14",
-        "max-range": "28-30"
-    },
-    "september": {
-        "min": 15,
-        "max": 29,
-        "min-range": "14-16",
-        "max-range": "28-30"
-    },
-    "october": {
-        "min": 15,
-        "max": 27,
-        "min-range": "14-16",
-        "max-range": "26-28"
-    },
-    "november": {
-        "min": 17,
-        "max": 27,
-        "min-range": "16-18",
-        "max-range": "26-28"
-    },
-    "december": {
-        "min": 19,
-        "max": 31,
-        "min-range": "18-20",
-        "max-range": "30-32"
-    }
-}
-"2011": {
-    "january": {
-        "min": 21,
-        "max": 31,
-        "min-range": "20-22",
-        "max-range": "30-32"
-    },
-    "february": {
-        "min": 19,
-        "max": 31,
-        "min-range": "18-20",
-        "max-range": "30-32"
-    },
-    "march": {
-        "min": 19,
-        "max": 27,
-        "min-range": "18-20",
-        "max-range": "26-28"
-    },
-    "april": {
-        "min": 17,
-        "max": 27,
-        "min-range": "16-18",
-        "max-range": "26-28"
-    },
-    "may": {
-        "min": 13,
-        "max": 25,
-        "min-range": "12-14",
-        "max-range": "24-26"
-    },
-    "june": {
-        "min": 9,
-        "max": 25,
-        "min-range": "08-10",
-        "max-range": "24-26"
-    },
-    "july": {
-        "min": 15,
-        "max": 27,
-        "min-range": "14-16",
-        "max-range": "26-28"
-    },
-    "august": {
-        "min": 15,
-        "max": 29,
-        "min-range": "14-16",
-        "max-range": "28-30"
-    },
-    "september": {
-        "min": 13,
-        "max": 31,
-        "min-range": "12-14",
-        "max-range": "30-32"
-    },
-    "october": {
-        "min": 17,
-        "max": 29,
-        "min-range": "16-18",
-        "max-range": "28-30"
-    },
-    "november": {
-        "min": 17,
-        "max": 29,
-        "min-range": "16-18",
-        "max-range": "28-30"
-    },
-    "december": {
-        "min": 17,
-        "max": 29,
-        "min-range": "16-18",
-        "max-range": "28-30"
-    }
-},
-"2012": {
-    "january": {
-        "min": 17,
-        "max": 27,
-        "min-range": "16-18",
-        "max-range": "26-28"
-    },
-    "february": {
-        "min": 19,
-        "max": 31,
-        "min-range": "18-20",
-        "max-range": "30-32"
-    },
-    "march": {
-        "min": 17,
-        "max": 29,
-        "min-range": "16-18",
-        "max-range": "28-30"
-    },
-    "april": {
-        "min": 17,
-        "max": 27,
-        "min-range": "16-18",
-        "max-range": "26-28"
-    },
-    "may": {
-        "min": 15,
-        "max": 25,
-        "min-range": "14-16",
-        "max-range": "24-26"
-    },
-    "june": {
-        "min": 15,
-        "max": 25,
-        "min-range": "14-16",
-        "max-range": "24-26"
-    },
-    "july": {
-        "min": 13,
-        "max": 25,
-        "min-range": "12-14",
-        "max-range": "24-26"
-    },
-    "august": {
-        "min": 11,
-        "max": 27,
-        "min-range": "10-12",
-        "max-range": "26-28"
-    },
-    "september": {
-        "min": 17,
-        "max": 29,
-        "min-range": "16-18",
-        "max-range": "28-30"
-    },
-    "october": {
-        "min": 19,
-        "max": 31,
-        "min-range": "18-20",
-        "max-range": "30-32"
-    },
-    "november": {
-        "min": 17,
-        "max": 29,
-        "min-range": "16-18",
-        "max-range": "28-30"
-    },
-    "december": {
-        "min": 21,
-        "max": 31,
-        "min-range": "20-22",
-        "max-range": "30-32"
+    "2015": {
+        "january": {
+            "min": 21,
+            "max": 33,
+            "min-range": "20-22",
+            "max-range": "32-34"
+        },
+        "february": {
+            "min": 19,
+            "max": 29,
+            "min-range": "28-20",
+            "max-range": "28-30"
+        },
+        "march": {
+            "min": 19,
+            "max": 29,
+            "min-range": "18-20",
+            "max-range": "28-30"
+        },
+        "april": {
+            "min": 17,
+            "max": 29,
+            "min-range": "16-18",
+            "max-range": "28-30"
+        },
+        "may": {
+            "min": 15,
+            "max": 23,
+            "min-range": "14-16",
+            "max-range": "22-24"
+        },
+        "june": {
+            "min": 13,
+            "max": 25,
+            "min-range": "12-14",
+            "max-range": "24-26"
+        },
+        "july": {
+            "min": 15,
+            "max": 25,
+            "min-range": "14-16",
+            "max-range": "24-26"
+        },
+        "august": {
+            "min": 15,
+            "max": 29,
+            "min-range": "14-16",
+            "max-range": "28-30"
+        },
+        "september": {
+            "min": 15,
+            "max": 31,
+            "min-range": "14-16",
+            "max-range": "30-32"
+        },
+        "october": {
+            "min": 19,
+            "max": 33,
+            "min-range": "18-20",
+            "max-range": "32-34"
+        },
+        "november": {
+            "min": 19,
+            "max": 29,
+            "min-range": "18-20",
+            "max-range": "28-30"
+        },
+        "december": {
+            "min": 21,
+            "max": 31,
+            "min-range": "20-22",
+            "max-range": "30-32"
+        }
     }
 }
