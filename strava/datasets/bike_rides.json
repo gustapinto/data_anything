@@ -106,5 +106,53 @@
         "time": 74.19,
         "average_speed": 20.6,
         "top_speed": 35.3
+    },
+    "21-11-2020": {
+        "mileage": 15.18,
+        "time": 42.22,
+        "average_speed": 21.5,
+        "top_speed": 34.9
+    },
+    "10-12-2020": {
+        "mileage": 12.21,
+        "time": 33.43,
+        "average_speed": 21.7,
+        "top_speed": 33.8
+    },
+    "24-12-2020": {
+        "mileage": 8.18,
+        "time": 22.19,
+        "average_speed": 22,
+        "top_speed": 33
+    },
+    "26-12-2020": {
+        "mileage": 7.62,
+        "time": 22.37,
+        "average_speed": 20.2,
+        "top_speed": 38.2
+    },
+    "31-12-2020": {
+        "mileage": 16.89,
+        "time": 41.35,
+        "average_speed": 24.4,
+        "top_speed": 36.4
+    },
+    "02-01-2021": {
+        "mileage": 9.98,
+        "time": 29.25,
+        "average_speed": 20.4,
+        "top_speed": 38.9
+    },
+    "27-01-2021": {
+        "mileage": 24.57,
+        "time": 58.16,
+        "average_speed": 25.3,
+        "top_speed": 41.4
+    },
+    "29-01-2021": {
+        "mileage": 26.81,
+        "time": 67.27,
+        "average_speed": 23.9,
+        "top_speed": 43.6
     }
 }
