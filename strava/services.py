@@ -5,13 +5,20 @@ data_frame = pd.read_json(path_or_buf='./datasets/bike_rides.json')
 
 data_frame_labels = {
     'mileage': ['Quilometragem', 'Km'],
-    'time': ['Tempo por pedalada', 'm:s'],
+    'time': ['Tempo por pedalada', 'min'],
     'average_speed': ['Velocidade média', 'Km/h'],
     'top_speed': ['Velocidade máxima', 'Km/h'],
 }
 
 def _get_line_average(field):
-    return data_frame.loc[field].mean(axis=0)
+    average = data_frame.loc[field].mean(axis=0)
+
+    if field == "time":
+        return average / 60  # Convert seconds to minutes
+    elif field == "mileage":
+        return average / 1000  # Convert meters to kilometers
+    else:
+        return average
 
 def _parse_data_frame_for_plot(field):
     field_avg = []
