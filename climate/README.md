@@ -17,7 +17,7 @@ The CPTEC only offer temperature data in form of ranges, so for the chart genera
 
 ```json
 "year": {
-    "mounth": {
+    "month": {
         "min": 21,
         "max": 31,
         "min-range": "20-22",
@@ -26,6 +26,11 @@ The CPTEC only offer temperature data in form of ranges, so for the chart genera
 }    
 ```
 
+## Data extractor
+
+To extract and export the necessary data a PHP Lumen based data extractor was created, check this **[CPTEC Data Extractor][3]**
+
 
 [1]: http://clima1.cptec.inpe.br/monitoramentobrasil/pt
 [2]: https://github.com/ghp2201/data-analysis/tree/master/strava
+[3]: https://github.com/gustapinto/cptec-data-extactor
