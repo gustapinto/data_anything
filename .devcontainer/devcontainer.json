@@ -1,0 +1,27 @@
+{
+    "name": "Jupyter",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "jupyter",
+    "workspaceFolder": "/jupyter",
+    "runServices": [
+        "jupyter"
+    ],
+    "forwardPorts": [
+        8888
+    ],
+    "settings": {
+        "python.languageServer": "Pylance",
+        "python.showStartPage": false,
+        "workbench.editorAssociations": [
+            {
+                "viewType": "jupyter.notebook.ipynb",
+                "filenamePattern": "*.ipynb"
+            }
+        ],
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+    ],
+    "postCreateCommand": "/bin/bash -c 'apt update && apt install git -y'"
+}
