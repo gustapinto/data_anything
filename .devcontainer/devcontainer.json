@@ -10,8 +10,12 @@
         8888
     ],
     "settings": {
+        "editor.rulers": [80],
         "python.languageServer": "Pylance",
         "python.showStartPage": false,
+        "[python]": {
+            "editor.rulers": [72, 79],
+        },
         "workbench.editorAssociations": [
             {
                 "viewType": "jupyter.notebook.ipynb",
