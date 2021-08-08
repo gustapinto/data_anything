@@ -154,5 +154,35 @@
         "time": 4026,
         "average_speed": 23.9,
         "top_speed": 43.6
+    },
+    "01-02-2021": {
+        "mileage": 14220,
+        "time": 3003,
+        "average_speed": 16.8,
+        "top_speed": 37.1
+    },
+    "02-02-2021": {
+        "mileage": 21260,
+        "time": 3015,
+        "average_speed": 25.5,
+        "top_speed": 38
+    },
+    "03-02-2021": {
+        "mileage": 16610,
+        "time": 2358,
+        "average_speed": 25.3,
+        "top_speed": 36
+    },
+    "20-02-2021": {
+        "mileage": 24590,
+        "time": 3842,
+        "average_speed": 22.8,
+        "top_speed": 46.4
+    },
+    "31-06-2021": {
+        "mileage": 22940,
+        "time": 3607,
+        "average_speed": 22.9,
+        "top_speed": 37.1
     }
 }
