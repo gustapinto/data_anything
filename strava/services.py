@@ -1,5 +1,8 @@
+from datetime import datetime
+
 from pandas import read_json, DataFrame
 from numpy import mean
+
 
 data_frame = read_json(path_or_buf='./datasets/bike_rides.json')
 
@@ -46,19 +49,34 @@ def print_average_data():
         print(f'{label}: {average:0.02f} {metric_unit}')
 
 def plot_mileage_chart():
-    plot_data = plot_data_frame = DataFrame({
+    plot_data = DataFrame({
         'Datas': data_frame.columns,
-        'Média': _get_field_average_list('mileage'),
-        'Tempo': _get_field_values_list('time', _make_time_visible_on_chart),
-        'Quilometragem': _get_field_values_list('mileage'),
+        'Duração': _get_field_values_list('time', _make_time_visible_on_chart),
+        'Metragem': _get_field_values_list('mileage'),
+        'Metragem Média': _get_field_average_list('mileage'),
     })
 
-    time_sub_plot = plot_data.plot(x='Datas', y='Tempo', color='#ffc107',
+    time_sub_plot = plot_data.plot(x='Datas', y='Duração', color='#ffc107',
                                    use_index=True, kind='line')
 
-    avg_and_time_sub_plot = plot_data.plot(x='Datas', y='Média', color='#ed8121',
+    avg_and_time_sub_plot = plot_data.plot(x='Datas', y='Metragem Média', color='#ed8121',
                                            ax=time_sub_plot, use_index=True,
                                            kind='line')
 
-    plot_data.plot(x='Datas', y='Quilometragem', ax=avg_and_time_sub_plot,
-                   kind='bar', title='Quilometragem')
+    plot_data.plot(x='Datas', y='Metragem', ax=avg_and_time_sub_plot,
+                   kind='bar')
+
+def plot_all_rides_table():
+    df = data_frame.transpose().rename(columns={
+        'mileage': 'Quilometragem',
+        'time': 'Duração',
+        'average_speed': 'Velocidade média',
+        'top_speed': 'Velocidade máxima',
+    })
+    
+    return df.style.format(precision=2, formatter={
+        ('Quilometragem'): lambda mileage: '{:.2f} Km'.format(mileage / 1000),
+        ('Duração'): lambda seconds: '{:.2f} Min'.format(seconds / 60),
+        ('Velocidade média'): lambda speed: '{:.1f} Km/h'.format(speed),
+        ('Velocidade máxima'): lambda speed: '{:.1f} Km/h'.format(speed),
+    })
