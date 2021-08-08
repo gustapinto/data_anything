@@ -1,7 +1,7 @@
-import pandas as pd
+from pandas import read_json, DataFrame
+from numpy import mean
 
-
-data_frame = pd.read_json(path_or_buf='./datasets/bike_rides.json')
+data_frame = read_json(path_or_buf='./datasets/bike_rides.json')
 
 data_frame_labels = {
     'mileage': ['Quilometragem', 'Km'],
@@ -10,46 +10,55 @@ data_frame_labels = {
     'top_speed': ['Velocidade máxima', 'Km/h'],
 }
 
-def _get_line_average(field):
-    average = data_frame.loc[field].mean(axis=0)
+def _get_field_values_list(field: str, callback=None) -> list:
+    values = data_frame.loc[field].values
 
-    if field == "time":
-        return average / 60  # Convert seconds to minutes
-    elif field == "mileage":
-        return average / 1000  # Convert meters to kilometers
-    else:
-        return average
+    if (callback):
+        return list(map(callback, values))
 
-def _parse_data_frame_for_plot(field):
-    field_avg = []
-    field_label = data_frame_labels[field][0]
+    return values
 
-    for key in data_frame.columns:
-        field_avg.append(_get_line_average(field))
+def _get_line_average_value(field: str) -> float:
+    return mean(_get_field_values_list(field))
 
-    plot_data_frame = pd.DataFrame({
-        'Datas': data_frame.columns,
-        'Média': field_avg,
-        field_label: data_frame.loc[field].values,
-    })
+def _get_field_average_list(field: str) -> list:
+    avg = _get_line_average_value(field)
 
-    return plot_data_frame
+    avg_list = [avg] * len(data_frame.columns)
+
+    return avg_list
+
+def _make_time_visible_on_chart(time: int) -> int:
+    return time * 10
 
 def print_average_data():
     for element, labels in data_frame_labels.items():
         label = labels[0]
         metric_unit = labels[1]
 
-        print(f'{label}: {_get_line_average(element):0.02f} {metric_unit}')
+        average = _get_line_average_value(element)
 
-def plot_chart(field, kind):
-    plot_data = _parse_data_frame_for_plot(field)
-    plot_index = True if kind != 'bar' else False
+        if element == 'time':
+            average /= 60  # Convert seconds to minutes
+        elif element == 'mileage':
+            average /= 1000  # Convert meters to kilometers
 
-    field_label = data_frame_labels[field][0]
+        print(f'{label}: {average:0.02f} {metric_unit}')
 
-    sub_plot = plot_data.plot(x='Datas', y='Média', color='#ed8121',
-                              use_index=plot_index)
+def plot_mileage_chart():
+    plot_data = plot_data_frame = DataFrame({
+        'Datas': data_frame.columns,
+        'Média': _get_field_average_list('mileage'),
+        'Tempo': _get_field_values_list('time', _make_time_visible_on_chart),
+        'Quilometragem': _get_field_values_list('mileage'),
+    })
 
-    return plot_data.plot(x='Datas', y=field_label, ax=sub_plot,
-                          kind=kind, title=field_label)
+    time_sub_plot = plot_data.plot(x='Datas', y='Tempo', color='#ffc107',
+                                   use_index=True, kind='line')
+
+    avg_and_time_sub_plot = plot_data.plot(x='Datas', y='Média', color='#ed8121',
+                                           ax=time_sub_plot, use_index=True,
+                                           kind='line')
+
+    plot_data.plot(x='Datas', y='Quilometragem', ax=avg_and_time_sub_plot,
+                   kind='bar', title='Quilometragem')
