@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Custom
+leme_climate_history/**/images/*
+!leme_climate_history/**/images/.gitkeep
