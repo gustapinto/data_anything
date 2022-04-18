@@ -4,11 +4,11 @@ services:
   jupyter:
     build:
       context: .
-      dockerfile: Dockerfile_python_jupyter
-    command: /bin/sh "jupyterlab.sh"
+      dockerfile: ./docker/dev/Dockerfile
+    command: /bin/sh "/jupyter/docker/dev/jupyterlab.sh"
     ports:
       - "8888:8888"
     volumes:
-      - ./:/jupyter
+      - ./:/jupyter:Z
     working_dir: /jupyter
     tty: true
