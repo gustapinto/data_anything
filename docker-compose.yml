@@ -1,13 +1,13 @@
 version: '3.1'
 
 services:
-  jupyter:
+  conda:
     build:
       context: .
-      dockerfile: ./docker/dev/Dockerfile
-    command: /bin/sh "/jupyter/docker/dev/jupyterlab.sh"
+      dockerfile: ./Dockerfile
+    command: jupyter notebook --allow-root --ip 0.0.0.0
     ports:
-      - "8888:8888"
+      - 8888:8888
     volumes:
       - ./:/jupyter:Z
     working_dir: /jupyter
