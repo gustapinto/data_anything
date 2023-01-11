@@ -1,5 +1,15 @@
 version: '3.1'
 
+x-spark-commom:
+  &x-spark-commom
+  image: docker.io/bitnami/spark:3.3
+  volumes:
+    - ./:/jupyter:Z
+  env_file:
+    - .env
+  networks:
+    - spark
+
 services:
   conda:
     build:
@@ -12,3 +22,21 @@ services:
       - ./:/jupyter:Z
     working_dir: /jupyter
     tty: true
+
+  spark:
+    <<: *x-spark-commom
+    ports:
+      - '8080:8080'
+      - '7077:7077'
+    environment:
+      - SPARK_MODE=master
+
+  spark-worker:
+    <<: *x-spark-commom
+    environment:
+      - SPARK_MODE=worker
+
+networks:
+  spark:
+    driver: bridge
+
