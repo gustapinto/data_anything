@@ -131,3 +131,5 @@ dmypy.json
 # Custom
 leme_climate_history/**/images/*
 !leme_climate_history/**/images/.gitkeep
+tmp/*
+!tmp/.gitkeep
