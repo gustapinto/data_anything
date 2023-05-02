@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
     df = spark.read.option('inferSchema', 'true') \
                    .option('header', 'true') \
-                   .csv('/jupyter/datasets/netflix_titles.csv')
+                   .csv('/app/datasets/netflix_titles.csv')
 
     df.groupBy(f.col('release_year')).count().orderBy(f.col('count').desc()).show()
 

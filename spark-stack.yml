@@ -1,0 +1,42 @@
+version: '3'
+
+x-spark-commom:
+  &x-spark-commom
+  image: docker.io/bitnami/spark:3.3
+  volumes:
+    - ./spark:/app:Z
+  env_file:
+    - .env
+  networks:
+    - spark
+
+services:
+  java:
+    image: gradle:jdk17
+    command: tail -f /dev/null
+    tty: true
+    volumes:
+      - ./spark:/app:Z
+    working_dir: /app
+    env_file:
+      - .env
+    networks:
+      - spark
+
+  spark:
+    <<: *x-spark-commom
+    ports:
+      - '8080:8080'
+      - '7077:7077'
+    environment:
+      - SPARK_MODE=master
+
+  spark-worker:
+    <<: *x-spark-commom
+    environment:
+      - SPARK_MODE=worker
+
+networks:
+  spark:
+    driver: bridge
+
